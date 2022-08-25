@@ -3,7 +3,7 @@ import {Box,Divider,Flex,Spacer,Text,Image} from '@chakra-ui/react'
 const Footer = () => {
   return (
     <>
-    <Box border={'1px solid black'} bg={'rgb(32,38,65)'} color={'gray'}>
+    <Box border={'1px solid black'} bg={'rgb(32,38,65)'} color={'gray'} mt={20}>
         <Flex >
             <Box width={'800px'}> 
                 <Flex>

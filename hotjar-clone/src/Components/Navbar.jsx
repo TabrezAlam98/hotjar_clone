@@ -16,19 +16,19 @@ const Navbar = () => {
     
       <Flex>
         <Link to='/'><Image className={style.logo} src='https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/whtdqojxdp7jhhupl4sf'/></Link>
-        <Link to='/product'>
+        <Link to='/product'></Link>
           <ProductChakra/>
-        </Link>
-        <Link to='/whyHotjar'>
+        
+        <Link to='/whyHotjar'></Link>
         <WhyHotjarChakra/>
-        </Link>
+        
         <Link to='/pricing'><Button >Pricing</Button></Link>
-        <Link to={'/learn'}>
+        <Link to={'/learn'}></Link>
         <LearnChakra/>
-        </Link>
-        <Link to='/company'>
+        
+        <Link to='/company'></Link>
         <CompanyChakra/>
-        </Link>
+        
         <Spacer/>
         <Button bg={'white'} border={'1px solid rgb(50,79,190)'} color={'rgb(50,79,190)'} mr={3}>Sign in</Button>
         <Button bg={'rgb(50,79,190)'} border={'1px solid rgb(50,79,190)'} color={'white'}>Get started free</Button>
