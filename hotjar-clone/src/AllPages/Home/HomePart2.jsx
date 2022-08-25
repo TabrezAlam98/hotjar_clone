@@ -5,7 +5,9 @@ const HomePart2 = () => {
   return (
     <Box style={{width:'90%',margin:'auto',marginTop:'40px'}}>
         <Flex>
-            <Box style={{width:"55%",border:'1px solid black'}} h={430} >video box</Box>
+            <Box style={{width:"55%"}} h={430} >
+              <Image width='100%' height='100%' src="https://embed-ssl.wistia.com/deliveries/3950c660be3ee9e53448e483b5248003.jpg?image_crop_resized=640x360"/>
+            </Box>
             <Box style={{width:"45%"}} h={430} >
                 <Text as='h1' fontSize={24} style={{width:'60%',margin:"auto",textAlign:'left',marginTop:'50px'}}>The slow, manual days of collating data and feedback are over.</Text>
                 <Text fontSize={18} style={{width:'60%',margin:"auto",textAlign:'left',marginTop:'20px'}}>The slow, manual days of collating data and feedback are over.</Text>
