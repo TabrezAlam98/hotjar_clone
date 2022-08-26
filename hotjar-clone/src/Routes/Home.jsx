@@ -9,6 +9,8 @@ import HomePart6 from '../AllPages/Home/HomePart6'
 import HomePart7 from '../AllPages/Home/HomePart7'
 import HomePart8 from '../AllPages/Home/HomePart8'
 import Footer from '../Components/Footer'
+import Login from './Login'
+import Workspaces from './Workspaces'
 
 const Home = () => {
   return (<>
@@ -22,6 +24,8 @@ const Home = () => {
     <HomePart7/>
     <HomePart8/>
     <Footer/>
+    
+    {/* <Workspaces/> */}
     </>)
 }
 
