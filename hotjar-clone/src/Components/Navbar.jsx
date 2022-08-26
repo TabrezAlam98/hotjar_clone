@@ -30,7 +30,10 @@ const Navbar = () => {
         <CompanyChakra/>
         
         <Spacer/>
+        <Link to='/login'>
         <Button bg={'white'} border={'1px solid rgb(50,79,190)'} color={'rgb(50,79,190)'} mr={3}>Sign in</Button>
+        </Link>
+        
         <Button bg={'rgb(50,79,190)'} border={'1px solid rgb(50,79,190)'} color={'white'}>Get started free</Button>
         <Button>toggle</Button>
         </Flex>

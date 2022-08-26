@@ -6,6 +6,8 @@ import WhyHotjar from './WhyHotjar'
 import Pricing from './Pricing'
 import Learn from './Learn'
 import Company from './Company'
+import Login from './Login'
+import Workspaces from './Workspaces'
 
 
 
@@ -19,6 +21,9 @@ const AllRoutes = () => {
             <Route path='/pricing' element={<Pricing/>}/>
             <Route path='/learn' element={<Learn/>}/>
             <Route path='/company' element={<Company/>}/>
+            <Route path='/login' element={<Login/>}/>
+            <Route path='/workspaces' element={<Workspaces/>}/>
+
             </Routes>
       
     </div>
