@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Link} from 'react-router-dom'
 import {Box, Button,Spacer,Flex,Image,Menu,MenuButton,MenuList,MenuItem, Divider} from '@chakra-ui/react'
 import { ChevronDownIcon} from '@chakra-ui/icons'
@@ -10,6 +10,7 @@ import CompanyChakra from '../ChakraComponents/CompanyChakra'
 
 
 const Navbar = () => {
+  const [toggle,setToggle]=useState(false)
   return (
     <>
     <div className={style.Nav}>
@@ -35,7 +36,7 @@ const Navbar = () => {
         </Link>
         
         <Button bg={'rgb(50,79,190)'} border={'1px solid rgb(50,79,190)'} color={'white'}>Get started free</Button>
-        <Button>toggle</Button>
+        <Button width="100px" ml={5} onClick={()=>setToggle(!toggle)}>{toggle ? "light" :"dark"}</Button>
         </Flex>
        
    

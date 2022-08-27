@@ -25,9 +25,7 @@ const Home = () => {
     <HomePart7/>
     <HomePart8/>
     <Footer/>
-    {/* <Heatmap/> */}
     
-    {/* <Workspaces/> */}
     </>)
 }
 
