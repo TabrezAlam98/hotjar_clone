@@ -5,7 +5,7 @@ const HomePart1 = () => {
   return (
     <Box width={'90%'} style={{margin:'auto',marginTop:'30px'}}>
         <Text as='h1' fontSize='5xl' width={'80%'}  textAlign={'left'}>
-        Understand<span style={{color:'tomato'}}>how users behave</span>  on your site, what they need, and how they feel, fast.
+        Understand<span style={{color:'tomato',marginLeft:'6px'}} >how users behave</span>  on your site, what they need, and how they feel, fast.
         </Text>
         <Box mt={7}>
             <Flex>
