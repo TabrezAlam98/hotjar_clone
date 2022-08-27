@@ -3,7 +3,7 @@ import {Box,Flex,Text,Image, Spacer,Button} from '@chakra-ui/react'
 const HeatmapsPart3= () => {
   return (
     <Box style={{marginTop:"100px",marginBottom:'100px',background:'rgb(255,167,139)'}} width='90%' margin='auto'  height='300px'>
-        <Flex width='80%' margin='auto' >
+        <Flex width='80%' margin='auto' mb={12}>
             <Box width='55%' margin='auto' height='300px' textAlign='left'>
                 <Text fontSize="5xl" mt={5}>Get started with Heatmaps</Text>
                 <Text mt={2} fontSize='xl'>The world's most popular heatmap feature. Trusted by over 900,000 websites across 180+ countries.</Text>
@@ -34,6 +34,8 @@ const HeatmapsPart3= () => {
               
             </Box>
         </Flex>
+        <Text fontSize='4xl' >Three other tools available on every Hotjar plan</Text>
+        <Text fontSize='xl'>Heatmaps are powerful alone, but even better when used alongside these tools.</Text>
     </Box>
   )
 }

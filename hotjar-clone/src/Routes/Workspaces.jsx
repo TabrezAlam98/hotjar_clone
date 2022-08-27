@@ -9,7 +9,7 @@ const Workspaces = () => {
         navigate('/')
     }
   return (
-   <Box width='92%' margin='auto'>
+   <Box width='92%' margin='auto' >
     <Flex p={3} borderBottom='1px' color='black'>
     <Image onClick={handleHomepage}  cursor='pointer' width='90px' src='https://insights.hotjar.com/static/app/img/logo-hotjar.svg'/>
     <Menu>

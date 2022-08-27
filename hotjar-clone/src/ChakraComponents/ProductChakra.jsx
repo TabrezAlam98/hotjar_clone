@@ -1,8 +1,14 @@
 
 import {Box, Button,Image,Text,Flex,Menu,MenuButton,MenuList,Stack,Divider} from '@chakra-ui/react'
 import { ChevronDownIcon,ViewIcon,ChatIcon} from '@chakra-ui/icons'
+import { useNavigate } from 'react-router-dom'
 
 const ProductChakra = () => {
+  const navigate=useNavigate()
+
+  const handleNextPage=()=>{
+    navigate('/heatmap')
+  }
   return (
     <>
 
@@ -34,7 +40,7 @@ const ProductChakra = () => {
                    <Divider mt={5}/>
 
                    <Image w={6} mt={10} src='https://images.ctfassets.net/lh3zuq09vnm2/3fvft31gR35Q9BjAxVk4Zw/9f93e529be4989f97d5743844699cf2a/icon-heatmaps.svg'/>
-                   <Text textAlign={'left'} fontWeight={'bold'} mt={4}>Heatmaps</Text>
+                   <Text cursor={'pointer'} onClick={handleNextPage} textAlign={'left'} fontWeight={'bold'} mt={4}>Heatmaps</Text>
                    <Text textAlign={'left'} mt={1}>Visualize user behaviour</Text>
 
                    <Image w={6} mt={10} src='https://images.ctfassets.net/lh3zuq09vnm2/76fQfkmWFtHn8xYHEbbzA0/f17539a8253616c98a87062824619972/icon-recordings.svg'/>
