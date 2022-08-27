@@ -131,3 +131,4 @@ export const Slider2Data=[
         logo_url:"https://images.ctfassets.net/lh3zuq09vnm2/6GxHuHnVO3oaiQkLRznyrv/ed2fb4fd18f9d26aba90aed0fd86b6dc/Property_1_Zendesk.svg"
     },
 ]
+

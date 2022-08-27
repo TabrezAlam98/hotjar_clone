@@ -8,6 +8,7 @@ import Learn from './Learn'
 import Company from './Company'
 import Login from './Login'
 import Workspaces from './Workspaces'
+import Heatmap from './Heatmap'
 
 
 
@@ -23,6 +24,7 @@ const AllRoutes = () => {
             <Route path='/company' element={<Company/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/workspaces' element={<Workspaces/>}/>
+            <Route path='/heatmap' element={<Heatmap/>}/>
 
             </Routes>
       

@@ -1,11 +1,33 @@
 import {Box,Flex,Image,Text,Button, Center,Link, Spacer, Divider,Input,Checkbox} from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
+import React,{useState,useContext} from 'react'
+import { AppContext } from '../Context/AppContextProvider';
+import axios from 'axios'
 const Login = () => {
+  const [email,setEmail]=useState("eve.holt@reqres.in");
+  const [password,setPassword]=useState("cityslicka")
   const navigate=useNavigate()
+  const {handleLogin} = useContext(AppContext)
 
-  const handleNextPage=()=>{
-    navigate('/workspaces')
+  const handleLoginClick=()=>{
+    const payload={
+      email,password
+    };
+    axios.post("https://reqres.in/api/register",payload)
+    .then((res)=>{
+      console.log(res.data)
+      handleLogin(res.data.token)
+      navigate('/workspaces')
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
+
+    
   }
+  
+
+  
   return (
     <Box >
         <Center>
@@ -41,10 +63,16 @@ const Login = () => {
                   
              <Box width='70%'   margin='auto' mt={10} >
               <Text textAlign='left' fontSize='md'>Email address</Text>
-              <Input placeholder='e.g. mary.jackson@nasa.com'  p={7} mt={3}/>
+              <Input type="text" 
+              value={email} 
+              onChange={(e)=>setEmail(e.target.value)}
+               placeholder='e.g. mary.jackson@nasa.com'  p={7} mt={3}/>
 
               <Text textAlign='left' fontSize='md' mt={6}>Password</Text>
-              <Input placeholder='Enter your password' type='password'  p={7} mt={3}/>
+              <Input 
+               value={password}
+               onChange={(e)=>setPassword(e.target.ariaValueNow)}
+              placeholder='Enter your password' type='password'  p={7} mt={3}/>
               <Box style={{marginLeft:'-200px'}} mt={2}>
               <Link  color='blue'><u>Forgot password?</u></Link>
               </Box>
@@ -53,7 +81,7 @@ const Login = () => {
              <Checkbox style={{marginLeft:'-180px'}} mt={7} defaultChecked>Keep me signed in</Checkbox>
              <Box>
               
-              <Button onClick={handleNextPage} width='70%' bg='rgb(50,79,190)' color='white' p={6} mt={5} mb={10} >Sign in</Button>
+              <Button onClick={handleLoginClick} width='70%' bg='rgb(50,79,190)' color='white' p={6} mt={5} mb={10} >Sign in</Button>
            
              
              </Box>
