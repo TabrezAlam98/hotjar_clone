@@ -47,7 +47,7 @@ const ProductChakra = () => {
                    <Text textAlign={'left'} mt={1}>Visualize user behaviour</Text>
 
                    <Image w={6} mt={10} src='https://images.ctfassets.net/lh3zuq09vnm2/76fQfkmWFtHn8xYHEbbzA0/f17539a8253616c98a87062824619972/icon-recordings.svg'/>
-                   <Text  cursor={'pointer'} onClick={handleNextPage1} textAlign={'left'} fontWeight={'bold'} mt={4}>Recoridngs</Text>
+                   <Text  cursor={'pointer'} onClick={handleNextPage1} textAlign={'left'} fontWeight={'bold'} mt={4}>Recordings</Text>
                    <Text textAlign={'left'} mt={1}>See what your use see</Text>
                  </Box>
 
