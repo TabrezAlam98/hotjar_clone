@@ -6,9 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
 import {ChakraProvider} from '@chakra-ui/react'
 import { AppContextProvider } from './Context/AppContextProvider';
+import ThemeContextProvider from './Context/ThemeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <ThemeContextProvider>
   <AppContextProvider>
   <ChakraProvider>
   <BrowserRouter>
@@ -18,6 +20,7 @@ root.render(
   </BrowserRouter>
   </ChakraProvider>
   </AppContextProvider>
+  </ThemeContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -11,6 +11,7 @@ import HomePart8 from '../AllPages/Home/HomePart8'
 import Footer from '../Components/Footer'
 import Heatmap from './Heatmap'
 import Login from './Login'
+import Recording from './Recording'
 import Workspaces from './Workspaces'
 
 const Home = () => {
@@ -25,6 +26,8 @@ const Home = () => {
     <HomePart7/>
     <HomePart8/>
     <Footer/>
+    
+    {/* <Recording/> */}
     
     </>)
 }
